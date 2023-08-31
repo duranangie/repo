@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Darker+Grotesque:wght@400;800&family=Poppins&display=swap");
+
+:root {
+  --fuente-logo: "Be Vietnam Pro", sans-serif;
+  --fuente-parrafo: "Darker Grotesque", sans-serif;
+  --fuente-titulo: "Poppins", sans-serif;
+  --color-principal: #8db286;
+}
+
+/* css de la barra de navegacion para escritorio*/
+
+header .navbar {
+  flex-wrap: nowrap;
+  padding: 5px;
+}
+#toggler,
+.navbar label .close,
+.navbar label .hamburguesa {
+  display: none;
+}
+
+header .navbar .menu {
+  max-height: 100%;
+  width: 50%;
+}
+header .navbar .menu .list {
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+header .navbar .menu .list a:hover{
+  color: var(--color-principal);
+}
+
+
+/* seccion del main con la informacion del hero para escritorio*/
+
+main .contenedor-titulos {
+  align-items: start;
+}
+main .contenedor-titulos .titulo1 {
+  font-size: 2.2rem;
+  letter-spacing: 5.13px;
+}
+main .contenedor-titulos h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 0;
+ 
+}
+main .contenedor-titulos .contenedor-subtitulo h6 {
+  font-size: 2rem;
+}
+main .contenedor-titulos .contenedor-subtitulo {
+  width: 80%;
+
+}
+main .contenedor-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+main .contenedor-info .imgGrupo{
+  width: 434px;
+  height: 434px;
+  background-color: var(--color-principal);
+  border-radius: 50%;
+
+}
+main .contenedor-info .contenedor-parrafo {
+  width: 50%;
+  padding: 30px;
+}
+main .contenedor-info .contenedor-parrafo p {
+  font-family: var(--fuente-parrafo);
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+main .contenedor-info .contenedor-parrafo button {
+  font-size: 1.5rem;
+}
+
+
+
+/* seccion de los anuncios que ganaron */
+
+.contenedor-titulos-gana .titulo-ganador {
+  font-size: 3.5rem;
+  padding-top: 65px;
+}
+.contenedor-titulos-gana .subtitulo-ganador {
+  font-size: 1.5rem;
+}
+#ganadores p {
+  width: 80%;
+  font-size: 1.1rem;
+  padding: 20px;
+}
+#ganadores .contenedor-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+#ganadores .contenedor-img img{
+  min-width: 350px;
+  max-width: 450px;
+  padding: 0 5px;
+}
+
+#ganadores .contenedor-img .aviso {
+  min-width: 250px;
+  max-width: 300px;
+}
+
+/* seccion de las opiniones */
+
+#opiniones .titulo-opiniones {
+  font-size: 3.5rem;
+}
+#opiniones p {
+  font-size: 1.2em;
+  width: 90%;
+  text-align: start;
+}
+#opiniones .contenedor-opinion {
+  width: 80%;
+  margin: 25px auto;
+  min-width: 290px;
+  max-width: 890px;
+}
+#opiniones .header-container .header {
+  flex: 2;
+}
+#opiniones .title {
+  font-size: 1.5rem;
+}
+#opiniones .header-corazon {
+  flex-direction: row;
+  flex: 2;
+}
+#opiniones .header-container .sub-title {
+  justify-content: flex-end;
+  width: 100%;
+}
+#opiniones .header-container .sub-title-fecha {
+  padding-left: 25px;
+}
+#opiniones .contenedor-icon {
+  display: none;
+}
+#opiniones .header-container .icon {
+display: none;
+}
+#opiniones .header-container .icon::before {
+  display: none;
+}
+#opiniones .expandable .content {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  height: 50%;
+  padding: .5rem;
+  border-radius:0;
+  margin-top: 5px;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: .9rem;
+  text-align: center;
+ 
+}
+
+
+/* seccion de pasos */
+#pasos {
+  width: 90%;
+  margin: 0 auto;
+}
+#pasos .contenedor-pasos {
+  flex-direction: row;
+}
+
+/* pie de pagina */
+footer .footer2, footer .footer3{
+  font-size: 1rem;
+  padding: 20px 0;
+}

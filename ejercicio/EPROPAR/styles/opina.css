@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Darker+Grotesque:wght@400;800&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section_1 h1{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 29px;
+    color: #8DB286;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.section_1 h3,ol{
+    font-family: 'Poppins';
+    font-size: 12px;
+    color: #000000;
+    text-align: start;
+    text-align: center;
+
+}
+
+form{
+    width: 400px;
+    background-color: #D9D9D9;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 15px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+form h3{
+    text-align: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    padding-bottom: 10px;
+}
+
+form textarea:placeholder {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+mb-3.form-control  + .form-select{
+    border-radius: 14px;
+}
+
+footer{
+    background-color: #8DB286;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+footer h2{
+    font-size: xx-large;
+}
+
+footer .footer2{
+    font-size: small;
+
+}
+footer .footer3{
+    font-size: 1rem;
+}

@@ -1,0 +1,447 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Darker+Grotesque:wght@400;800&family=Poppins&display=swap");
+
+:root {
+  --fuente-logo: "Be Vietnam Pro", sans-serif;
+  --fuente-parrafo: "Darker Grotesque", sans-serif;
+  --fuente-titulo: "Poppins", sans-serif;
+  --color-principal: #8db286;
+}
+
+/* css de la barra de navegacion  */
+
+header .navbar {
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #263238;
+  padding: 15px;
+}
+header .navbar .logo {
+  margin-left: 20px;
+  color: var(--color-principal);
+  text-shadow: 3px -2px 3px rgba(0, 0, 0, 0.5);
+  font-family: var(--fuente-logo);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+header .navbar #toggler,
+label .close {
+  display: none;
+}
+
+header .navbar label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--color-principal);
+}
+
+header .navbar .menu {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+}
+
+header .navbar .menu .list {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+
+header .navbar .menu .list a {
+  color: #fff;
+  font-family: var(--fuente-titulo);
+  font-size: 1rem;
+  letter-spacing: 1.75px;
+}
+
+#toggler:checked ~ .menu {
+  max-height: 100%;
+}
+
+#toggler:checked + label .close {
+  display: inline; /* Cambiado a "inline" para mostrar el ícono close */
+}
+
+#toggler:checked + label .hamburguesa {
+  display: none;
+}
+
+/* seccion del main con la informacion del hero */
+
+main {
+  width: 100%;
+  background-color: rgb(141 178 134 / 0.56);
+  padding: 25px 0;
+}
+main .contenedor-main {
+  width: 90%;
+  margin: auto;
+}
+main .contenedor-titulos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+main .contenedor-titulos .titulo1 {
+  font-family: var(--fuente-parrafo);
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+}
+main .contenedor-titulos h1 {
+  width: 100%;
+  font-family: var(--fuente-parrafo);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 2.25px;
+  padding-top: 20px;
+}
+main .contenedor-titulos .contenedor-subtitulo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+main .contenedor-titulos .contenedor-subtitulo .imgColombia {
+  width: 45px;
+  align-self: flex-end;
+  margin: auto 10%;
+  padding-bottom: 8px;
+  transform: rotate(-19.5deg);
+}
+main .contenedor-titulos .contenedor-subtitulo h6 {
+  width: 100%;
+  text-align: end;
+  font-family: var(--fuente-parrafo);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+main .contenedor-info {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto 5%;
+}
+main .contenedor-info .contenedor-parrafo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+main .contenedor-info .contenedor-parrafo p {
+  font-family: var(--fuente-parrafo);
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+main .contenedor-info .contenedor-parrafo button {
+  margin: 25px;
+  margin-bottom: 15px;
+  padding: 0 25px 7px 25px;
+  border-radius: 130px;
+  background-color: var(--color-principal);
+  border: none;
+  box-shadow: 2px -1px 10px -3px rgba(0, 0, 0, 0.5);
+  font-family: var(--fuente-parrafo);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* seccion de los anuncios que ganaron */
+
+#ganadores .contenedor-titulos-gana {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.contenedor-titulos-gana .titulo-ganador {
+  color: rgba(210, 46, 55, 0.82);
+  font-family: var(--fuente-logo);
+  font-size: 1.8rem;
+  font-weight: 800;
+  padding-top: 25px;
+}
+.contenedor-titulos-gana .subtitulo-ganador {
+  text-align: center;
+  font-family: var(--fuente-parrafo);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  padding-top: 20px;
+}
+#ganadores p {
+  width: 90%;
+  margin: auto;
+  font-family: var(--fuente-titulo);
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 1.05px;
+  padding: 20px;
+}
+#ganadores .contenedor-img {
+  width: 60%;
+  margin: auto;
+}
+#ganadores .contenedor-img .aviso {
+  width: 100%;
+  background-color: var(--color-principal);
+  margin: 25px 0;
+  padding: 15px 5px;
+}
+
+/* seccion de las opiniones */
+#opiniones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 25px;
+}
+#opiniones .titulo-opiniones {
+  color: var(--color-principal);
+  font-family: var(--fuente-logo);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 4.05px;
+  padding-top: 25px;
+}
+#opiniones p {
+  font-family: var(--fuente-titulo);
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.84px;
+  padding-top: 25px;
+}
+#opiniones .contenedor-opinion {
+  width: 80%;
+  margin: 25px auto;
+  min-width: 290px;
+}
+#opiniones .check-input {
+  display: none;
+}
+#opiniones .header-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 28px;
+  box-shadow: 1px 1px 9px -2px rgba(0, 0, 0, 0.5);
+}
+#opiniones .header-container .header {
+  flex: 2;
+}
+#opiniones .title {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: var(--fuente-parrafo);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+#opiniones .header-corazon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 3;
+  margin: 0 10px;
+}
+#opiniones .header-container .sub-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fuente-parrafo);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+#opiniones .header-container .sub-title-fecha {
+  font-family: var(--fuente-parrafo);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1.05px;
+}
+#opiniones .header-container .corazon {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+  color: #9b9b9b;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#opiniones .header-container .corazon-lleno {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F05542;
+}
+#opiniones .contenedor-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #e4e0e075;
+  border: 1px solid color;
+  border-radius: 50%;
+  fill: rgba(217, 217, 217, 0.42);
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.25));
+}
+#opiniones .header-container .icon {
+  width: 15px;
+  height: 2px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#opiniones .header-container .icon::before {
+  content: "";
+  width: 2px;
+  height: 15px;
+  display: block;
+  background-color: #000;
+  transition: all 0.2s;
+}
+#opiniones .check-input:checked + label .header-container .icon::before {
+  content: "";
+  opacity: 0;
+}
+#opiniones .expandable .content {
+  opacity: 0;
+  visibility: hidden;
+  padding: 1rem;
+  width: 100%;
+  background: #fff;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  height: 0;
+  transition: transform 0.2s;
+  padding: 1rem;
+  border-radius: 28px;
+  margin-top: 5px;
+  border-radius: 28px;
+  box-shadow: 1px 1px 9px -2px rgba(0, 0, 0, 0.5);
+}
+#opiniones .check-input:checked + label .content {
+  opacity: 1;
+  height: unset;
+  transform: scaleY(1);
+  visibility: visible;
+}
+
+/* seccion de pasos */
+#pasos {
+  width: 100%;
+}
+#pasos .contenedor-pasos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 25px auto;
+}
+#pasos .titulo-opiniones {
+  color: var(--color-principal);
+  font-family: var(--fuente-logo);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 4.05px;
+  text-align: start;
+  display: inline-block;
+  width: 100%;
+  padding: 0 25px;
+}
+#pasos .contenedor-paso1 {
+  border-radius: 10px;
+  background: rgba(217, 217, 217, 0.61);
+  width: 100%;
+  padding: 35px;
+  margin: 25px;
+}
+#pasos .parrafo-pasos {
+  text-align: center;
+  font-family: var(--fuente-titulo);
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.98px;
+}
+#pasos li {
+  font-family: var(--fuente-titulo);
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.84px;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 28px;
+  box-shadow: 1px 1px 9px -2px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  margin: 15px;
+}
+#pasos li button {
+  margin-top: 10px;
+  padding: 7px 25px;
+  border-radius: 130px;
+  background-color: #8db286;
+  border: none;
+  box-shadow: 2px -1px 10px -3px rgba(0, 0, 0, 0.5);
+  font-family: var(--fuente-titulo);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+#pasos .contenedor-paso1 p {
+  color: #000;
+  text-align: center;
+  font-family: var(--fuente-titulo);
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+}
+#pasos li .titulo-pasos {
+  font-size: 0.8rem;
+}
+
+
+/* pie de pagina */
+footer{
+  background-color: var(--color-principal);
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  font-family: var(--fuente-logo);
+}
+footer h2{
+  font-size: 2rem;
+}
+
+footer .footer2, footer .footer3{
+  font-size: 0.7rem;
+  padding: 20px 0;
+}

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Darker+Grotesque:wght@400;800&family=Poppins&display=swap");
+
+:root {
+  --fuente-logo: "Be Vietnam Pro", sans-serif;
+  --fuente-parrafo: "Darker Grotesque", sans-serif;
+  --fuente-titulo: "Poppins", sans-serif;
+  --color-principal: #8db286;
+}
+
+/* seccion de las opiniones */
+
+#opiniones .titulo-opiniones {
+  font-size: 3.5rem;
+}
+#opiniones p {
+  font-size: 1.2em;
+  width: 90%;
+  text-align: start;
+}
+#opiniones .contenedor-opinion {
+  width: 80%;
+  margin: 25px auto;
+  min-width: 290px;
+  max-width: 890px;
+}
+#opiniones .header-container .header {
+  flex: 2;
+}
+#opiniones .title {
+  font-size: 1.5rem;
+}
+#opiniones .header-corazon {
+  flex-direction: row;
+  flex: 2;
+}
+#opiniones .header-container .sub-title {
+  justify-content: flex-end;
+  width: 100%;
+}
+#opiniones .header-container .sub-title-fecha {
+  padding-left: 25px;
+}
+#opiniones .contenedor-icon {
+  display: none;
+}
+#opiniones .header-container .icon {
+display: none;
+}
+#opiniones .header-container .icon::before {
+  display: none;
+}
+#opiniones .expandable .content {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  height: 50%;
+  padding: .5rem;
+  border-radius:0;
+  margin-top: 5px;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: .9rem;
+  text-align: center;
+ 
+}

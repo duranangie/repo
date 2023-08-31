@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Darker+Grotesque:wght@400;800&family=Poppins&display=swap');
+
+*{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+
+html{
+    min-height: 100%;
+    position: relative;
+}
+main{
+    padding-top: 9%;
+
+}
+
+div h2{
+    color:#8DB286;
+    text-align: start;
+    padding-left: 20px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    padding-bottom: 5px;
+}
+
+div hr{
+    align-items: start;
+    width: 320px;
+    height: 3px;
+    background-color: #8DB286;
+    
+}
+
+div{
+    padding-bottom: 50px;
+}
+
+div p{
+
+    font-size: 15px;
+    margin: 20px;
+}
+
+.somos img{
+    width: 287px;
+    height: 278px;
+}
+
+.entidades img{
+    width: 335px;
+    height: 335px;
+}
+
+.entidades ul .items{
+    list-style: circle;
+}
+.entidades p{
+    text-align: start;
+}
+
+.contacto{
+    display: grid;
+    height: 100px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px;
+    grid-column: span 1 / 7;
+    grid-column: p 2 / 10;
+}
+
+/*footer{
+    background-color: #8DB286;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+footer h2{
+    font-size: xx-large;
+}
+
+footer .footer2{
+    font-size: small;
+
+}
+footer .footer3{
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 764px) {
+    
+}
